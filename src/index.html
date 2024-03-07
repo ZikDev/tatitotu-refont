@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>Tatitotu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
@@ -10,13 +10,13 @@
     <div class="container">
       <div class="row">
         <header class="col-12">
-          <img src="" alt="" />
+          <img src="img/Fichier 3.svg" alt="logo" />
           <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="">Accueil</a>
+            <a href="">Charger un défi</a>
+            <a href="">Besoin d’aide ?</a>
+            <a href="">Admin</a>
+            <a href="">Contact</a>
           </nav>
         </header>
       </div>
@@ -26,32 +26,41 @@
         <div class="row">
           <div class="col-3 card">
             <div class="card-title">
-              <h2></h2>
+              <h2>Verbes</h2>
             </div>
             <div class="card-content">
               <div class="search">
                 <label for="verb-search" class="search-bar">
                   <input type="search" id="site-search" name="q" />
                 </label>
-                <label for="class-search" class="search-year">
-                  <input type="checkbox" />
-                </label>
+                <select name="question-year" id="select-year">
+                  <option value="3H">3H</option>
+                  <option value="4H">4H</option>
+                  <option value="5H">5H</option>
+                  <option value="6H">6H</option>
+                  <option value="7H">7H</option>
+                  <option value="8H">8H</option>
+                  <option value="9H">9H</option>
+                  <option value="10H">10H</option>
+                  <option value="11H">11H</option>
+                  <option value="CIF">CIF</option>
+                </select>
               </div>
             </div>
-            <div class="verb"></div>
-            <div class="verb"></div>
-            <div class="verb"></div>
-            <div class="verb"></div>
-            <div class="verb"></div>
-            <div class="verb"></div>
+            <div class="verb">admirer</div>
+            <div class="verb">avoir</div>
+            <div class="verb">être</div>
+            <div class="verb">aller</div>
+            <div class="verb">lancer</div>
+            <div class="verb">vendre</div>
           </div>
           <div class="col-6" class="card">
             <div class="card-title">
-              <h2></h2>
+              <h2>Paramètres du défi</h2>
             </div>
             <div class="card-content">
               <div class="question">
-                <h2></h2>
+                <h2>Nombre de quesions</h2>
                 <select name="question-number" id="number-select">
                   <option value="5">5</option>
                   <option value="10">10</option>
@@ -62,108 +71,129 @@
                 </select>
               </div>
               <div class="mode">
-                <div class="mode-normal"></div>
-                <div class="mode-temp"></div>
+                <div class="mode-normal">Normal</div>
+                <div class="mode-temp">Trouver mode + temps</div>
               </div>
               <div class="option">
-                <h3 class="option-title"></h3>
+                <h3 class="option-title">Indicatif</h3>
                 <div class="option-choices">
                   <label for="présent">
                     <input type="checkbox" />
+                    Présent
                   </label>
                   <label for="passé_composé">
                     <input type="checkbox" />
+                    Passé composé
                   </label>
                   <label for="imparfait">
                     <input type="checkbox" />
+                    Imparfait
                   </label>
                   <label for="plus-que-parfait">
                     <input type="checkbox" />
+                    Plus-que-parfait
                   </label>
                   <label for="futur">
                     <input type="checkbox" />
+                    Futur
                   </label>
                   <label for="futur_anterieur">
                     <input type="checkbox" />
+                    Futur antérieur
                   </label>
                   <label for="passé_simple">
                     <input type="checkbox" />
+                    Passé simple
                   </label>
                   <label for="passé_anterieur">
                     <input type="checkbox" />
+                    Passé antérieur
                   </label>
                 </div>
               </div>
               <div class="option">
-                <h3 class="option-title"></h3>
+                <h3 class="option-title">Impératif</h3>
                 <div class="option-choices">
                   <label for="présent">
                     <input type="checkbox" />
+                    Présent
                   </label>
                   <label for="passé">
                     <input type="checkbox" />
+                    Passé
                   </label>
                 </div>
               </div>
               <div class="option">
-                <h3 class="option-title"></h3>
+                <h3 class="option-title">Subjonctif</h3>
                 <div class="option-choices">
                   <label for="présent">
                     <input type="checkbox" />
+                    Présent
                   </label>
                   <label for="passé">
                     <input type="checkbox" />
+                    Passé
                   </label>
                   <label for="imparfait">
                     <input type="checkbox" />
+                    Imparfait
                   </label>
                   <label for="plus-que-parfait">
                     <input type="checkbox" />
+                    Plus-que-parfait
                   </label>
                 </div>
               </div>
               <div class="option">
-                <h3 class="option-title"></h3>
+                <h3 class="option-title">Conditionnel</h3>
                 <div class="option-choices">
                   <label for="présent">
                     <input type="checkbox" />
+                    Présent
                   </label>
                   <label for="passé_1">
                     <input type="checkbox" />
+                    Passé 1
                   </label>
                   <label for="passé_2">
                     <input type="checkbox" />
+                    Passé 2
                   </label>
                 </div>
               </div>
               <div class="option">
-                <h3 class="option-title"></h3>
+                <h3 class="option-title">Participe</h3>
                 <div class="option-choices">
                   <label for="présent">
                     <input type="checkbox" />
+                    Présent
                   </label>
                   <label for="passé">
                     <input type="checkbox" />
+                    Passé
                   </label>
                 </div>
               </div>
               <div class="option">
-                <h3 class="option-title"></h3>
+                <h3 class="option-title">Gerondif</h3>
                 <div class="option-choices">
                   <label for="présent">
                     <input type="checkbox" />
+                    Présent
                   </label>
                   <label for="passé">
                     <input type="checkbox" />
+                    Passé
                   </label>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-3" class="action">
-            <div class="action-button"></div>
-            <div class="action-button"></div>
-            <div class="action-button"></div>
+            <div class="action-button">Imprimer</div>
+            <div class="action-button">Jouer</div>
+            <div class="action-button">Partager mon défi</div>
           </div>
         </div>
       </div>
