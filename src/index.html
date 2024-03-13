@@ -7,249 +7,290 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <header class="col-12">
-          <img src="img/Fichier 3.svg" alt="logo" />
-          <nav>
-            <a href="">Accueil</a>
-            <a href="">Charger un défi</a>
-            <a href="">Besoin d’aide ?</a>
-            <a href="">Admin</a>
-            <a href="">Contact</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-    <main>
+    <header>
       <div class="container">
         <div class="row">
-          <div class="col-3 card">
-            <div class="card-title">
-              <h2>Verbes</h2>
-            </div>
-            <div class="card-content">
-              <div class="search">
-                <label for="verb-search" class="search-bar">
-                  <input type="search" id="site-search" name="search-bar" />
-                </label>
-                <select name="question-year" id="select-year">
-                  <option value="3H">3H</option>
-                  <option value="4H">4H</option>
-                  <option value="5H">5H</option>
-                  <option value="6H">6H</option>
-                  <option value="7H">7H</option>
-                  <option value="8H">8H</option>
-                  <option value="9H">9H</option>
-                  <option value="10H">10H</option>
-                  <option value="11H">11H</option>
-                  <option value="CIF">CIF</option>
-                </select>
-              </div>
-            </div>
-            <div class="verb button button-verb">admirer</div>
-            <div class="verb button button-verb">avoir</div>
-            <div class="verb button button-verb">être</div>
-            <div class="verb button button-verb">aller</div>
-            <div class="verb button button-verb">lancer</div>
-            <div class="verb button button-verb">vendre</div>
+          <div class="col-12 l-header">
+            <img src="img/logo.svg" alt="logo" class="logo" />
+            <nav>
+              <a href="">Accueil</a>
+              <a href="">Charger un défi</a>
+              <a href="">Besoin d’aide ?</a>
+              <a href="">Admin</a>
+              <a href="">Contact</a>
+            </nav>
           </div>
-          <div class="col-6" class="card">
-            <div class="card-title">
-              <h2>Paramètres du défi</h2>
-            </div>
-            <div class="card-content">
-              <div class="question">
-                <h2>Nombre de quesions</h2>
-                <select name="question-number" id="number-select">
-                  <option value="5">5</option>
-                  <option value="10">10</option>
-                  <option value="20">20</option>
-                  <option value="30">30</option>
-                  <option value="40">40</option>
-                  <option value="50">50</option>
-                </select>
+        </div>
+      </div>
+    </header>
+    <main class="l-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <div class="card-title">
+                <h2>Verbes</h2>
               </div>
-              <div class="mode">
-                <div class="mode-normal button button-mode">Normal</div>
-                <div class="mode-temp button button-mode">
-                  Trouver mode + temps
+              <div class="card-content card-content-verb">
+                <div class="search">
+                  <label for="verb-search" class="search-bar">
+                    <input
+                      type="text"
+                      id="site-search"
+                      name="search-bar"
+                      placeholder="search"
+                    />
+                    <img src="img/search.svg" alt="search button" />
+                  </label>
+                  <select
+                    name="question-year"
+                    id="select-year"
+                    class="search-year"
+                  >
+                    <option value="3H">3H</option>
+                    <option value="4H">4H</option>
+                    <option value="5H">5H</option>
+                    <option value="6H">6H</option>
+                    <option value="7H">7H</option>
+                    <option value="8H">8H</option>
+                    <option value="9H">9H</option>
+                    <option value="10H">10H</option>
+                    <option value="11H">11H</option>
+                    <option value="CIF">CIF</option>
+                  </select>
                 </div>
-              </div>
-              <div class="option">
-                <h3 class="option-title">Indicatif</h3>
-                <div class="option-choices row">
-                  <label for="présent" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                  <label for="passé_composé" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé composé
-                  </label>
-                  <label for="imparfait" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Imparfait
-                  </label>
-                  <label for="plus-que-parfait" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Plus-que-parfait
-                  </label>
-                  <label for="futur" class="col-4 switch">
-                    <input type="checkbox" />
-                    Futur
-                  </label>
-                  <label for="futur_anterieur" class="col-4 switch">
-                    <input type="checkbox" />
-                    Futur antérieur
-                  </label>
-                  <label for="passé_simple" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé simple
-                  </label>
-                  <label for="passé_anterieur" class="col-4 switch">
-                    <input type="checkbox" />
-                    Passé antérieur
-                  </label>
+                <div class="verb button button-verb">
+                  admirer <img src="img/cross.svg" alt="cross" />
                 </div>
-              </div>
-              <div class="option">
-                <h3 class="option-title">Impératif</h3>
-                <div class="option-choices row">
-                  <label for="présent" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                  <label for="passé" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé
-                  </label>
+                <div class="verb button button-verb">
+                  avoir <img src="img/cross.svg" alt="cross" />
                 </div>
-              </div>
-              <div class="option">
-                <h3 class="option-title">Subjonctif</h3>
-                <div class="option-choices row">
-                  <label for="présent" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                  <label for="passé" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé
-                  </label>
-                  <label for="imparfait" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Imparfait
-                  </label>
-                  <label for="plus-que-parfait" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Plus-que-parfait
-                  </label>
+                <div class="verb button button-verb">
+                  être <img src="img/cross.svg" alt="cross" />
                 </div>
-              </div>
-              <div class="option">
-                <h3 class="option-title">Conditionnel</h3>
-                <div class="option-choices row">
-                  <label for="présent" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                  <label for="passé_1" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé 1
-                  </label>
-                  <label for="passé_2" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé 2
-                  </label>
+                <div class="verb button button-verb">
+                  aller <img src="img/cross.svg" alt="cross" />
                 </div>
-              </div>
-              <div class="option">
-                <h3 class="option-title">Participe</h3>
-                <div class="option-choices row">
-                  <label for="présent" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                  <label for="passé" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé
-                  </label>
+                <div class="verb button button-verb">
+                  lancer <img src="img/cross.svg" alt="cross" />
                 </div>
-              </div>
-              <div class="option">
-                <h3 class="option-title">Gerondif</h3>
-                <div class="option-choices row">
-                  <label for="présent" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                  <label for="passé" class="col-4 switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé
-                  </label>
+                <div class="verb button button-verb">
+                  vendre <img src="img/cross.svg" alt="cross" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-3" class="action">
-            <div class="button button-action">Imprimer</div>
-            <div class="button button-action">Jouer</div>
-            <div class="button button-action">Partager mon défi</div>
+          <div class="col-6">
+            <div class="card">
+              <div class="card-title">
+                <h2>Paramètres du défi</h2>
+              </div>
+              <div class="card-content">
+                <div class="question">
+                  <h2>Nombre de quesions</h2>
+                  <select name="question-number" id="number-select">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                  </select>
+                </div>
+                <div class="mode">
+                  <div class="mode-normal button button-mode">Normal</div>
+                  <div class="mode-temp button button-mode">
+                    Trouver mode + temps
+                  </div>
+                </div>
+                <div class="option">
+                  <h3 class="option-title">Indicatif</h3>
+                  <div class="option-choices row">
+                    <label for="présent" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                    <label for="passé_composé" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé composé
+                    </label>
+                    <label for="imparfait" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Imparfait
+                    </label>
+                    <label for="plus-que-parfait" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Plus-que-parfait
+                    </label>
+                    <label for="futur" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Futur
+                    </label>
+                    <label for="futur_anterieur" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Futur antérieur
+                    </label>
+                    <label for="passé_simple" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé simple
+                    </label>
+                    <label for="passé_anterieur" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé antérieur
+                    </label>
+                  </div>
+                </div>
+                <div class="option">
+                  <h3 class="option-title">Impératif</h3>
+                  <div class="option-choices row">
+                    <label for="présent" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                    <label for="passé" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé
+                    </label>
+                  </div>
+                </div>
+                <div class="option">
+                  <h3 class="option-title">Subjonctif</h3>
+                  <div class="option-choices row">
+                    <label for="présent" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                    <label for="passé" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé
+                    </label>
+                    <label for="imparfait" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Imparfait
+                    </label>
+                    <label for="plus-que-parfait" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Plus-que-parfait
+                    </label>
+                  </div>
+                </div>
+                <div class="option">
+                  <h3 class="option-title">Conditionnel</h3>
+                  <div class="option-choices row">
+                    <label for="présent" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                    <label for="passé_1" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé 1
+                    </label>
+                    <label for="passé_2" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé 2
+                    </label>
+                  </div>
+                </div>
+                <div class="option">
+                  <h3 class="option-title">Participe</h3>
+                  <div class="option-choices row">
+                    <label for="présent" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                    <label for="passé" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé
+                    </label>
+                  </div>
+                </div>
+                <div class="option">
+                  <h3 class="option-title">Gerondif</h3>
+                  <div class="option-choices row">
+                    <label for="présent" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                    <label for="passé" class="col-4 switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="action">
+              <div class="button button-action action-button">Imprimer</div>
+              <div class="button button-action action-button">Jouer</div>
+              <div class="button button-action action-button">
+                Partager mon défi
+              </div>
+            </div>
           </div>
         </div>
       </div>

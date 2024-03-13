@@ -1,0 +1,22 @@
+.card {
+  border-radius: 5px;
+  background: var(--white, #fff);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 0;
+}
+
+.card-title {
+  background: var(--background-title, #483b31);
+  color: var(--white, #fff);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card-content-verb {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
