@@ -1,0 +1,30 @@
+.question {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.question-number {
+  height: 25px;
+  width: 44px;
+  border-radius: 5px;
+  border: 1px solid var(--black, #332012);
+  background: var(--white, #fff);
+  color: var(--black, #332012);
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.question-number option {
+  color: var(--black, #332012);
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,14 @@
+.option {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.option-title {
+  color: var(--black, #332012);
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

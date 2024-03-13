@@ -1,21 +1,43 @@
-.switch-wrapper {
-  display: inline-block; /* pour que le div soit à côté du texte */
-  width: 30px;
-  height: 20px;
-  padding: 2px;
-  border-radius: 10px;
-  background: orange;
+.switch {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+  color: var(--black, #332012);
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
+.switch-wrapper {
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: 1px solid var(--black, #332012);
+  background: var(--white, #fff);
+}
+
+/* le rond qui se déplace */
 .switch-inner {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  background: red;
+  width: 10.5px;
+  height: 10.5px;
+  flex-shrink: 0;
+  border-radius: 10.5px;
+  background: var(--off, #ffbf90);
+  transition: margin 0.2s, background 0.2s;
+}
+
+input:hover + .switch-wrapper .switch-inner {
+  background: var(--main-color, #ff842a);
 }
 
 input:checked + .switch-wrapper .switch-inner {
-  margin-left: 10px;
+  margin-left: 16.25px;
+  background-color: var(--main-color, #ff842a);
 }
 
 .switch input {

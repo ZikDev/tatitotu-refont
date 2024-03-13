@@ -22,3 +22,17 @@
   width: 15px;
   height: 15px;
 }
+
+.button-mode {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--black, #332012);
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
