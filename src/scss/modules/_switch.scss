@@ -14,7 +14,7 @@
 .switch-wrapper {
   display: inline-block;
   width: 30px;
-  height: 15px;
+  height: 14px;
   flex-shrink: 0;
   border-radius: 22px;
   border: 1px solid var(--black, #332012);
@@ -23,8 +23,9 @@
 
 /* le rond qui se déplace */
 .switch-inner {
-  width: 10.5px;
-  height: 10.5px;
+  width: 10px;
+  height: 10px;
+  margin: 1px 0 0 1px;
   flex-shrink: 0;
   border-radius: 10.5px;
   background: var(--off, #ffbf90);
@@ -36,7 +37,7 @@ input:hover + .switch-wrapper .switch-inner {
 }
 
 input:checked + .switch-wrapper .switch-inner {
-  margin-left: 16.25px;
+  margin-left: 17px;
   background-color: var(--main-color, #ff842a);
 }
 
