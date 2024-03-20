@@ -2,6 +2,7 @@
   border-radius: 10px;
   background: var(--main-color, #ff842a);
   box-shadow: 3px 3px 0px 0px #332012;
+  transition: box-shadow 0.1s;
 }
 
 .button-verb {
@@ -35,4 +36,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.button-mode:hover {
+  box-shadow: 5px 5px 0px 0px #332012;
+}
+
+.button-action:hover {
+  box-shadow: 5px 5px 0px 0px #332012;
 }
