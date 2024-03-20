@@ -8,3 +8,23 @@
 .l-main {
   margin: 40px 0;
 }
+
+.l-exercice {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 60px 0;
+}
+
+.l-exercice-main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.l-exercice-bottom {
+  display: flex;
+  flex-flow: row nowraps;
+  justify-content: center;
+  gap: 24px;
+}
