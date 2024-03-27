@@ -1,0 +1,12 @@
+.print-option {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.print-button {
+  display: flex;
+  flex-flow: row nowrap;
+}
