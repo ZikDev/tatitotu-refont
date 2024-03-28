@@ -14,10 +14,12 @@
     <div class="row">
       <div class="col-6">
         <div class="print-option font-text">
-          <h2>Option d'impression</h2>
+          <h2 class="print-title">Options d'impression</h2>
           <div class="font-text">Titre de la fiche</div>
           <label for="fiche">
-            <input type="text" name="fiche" id="fiche">
+            <input type="text" name="fiche" id="fiche" 
+            placeholder="Nom de la fiche" 
+            class="font-bigtext print-option-title">
           </label>
           <label class="print-option-switch switch">
             <input type="checkbox">
@@ -86,7 +88,9 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="print-review"></div>
+        <div class="print-right">
+          <div class="print-review"></div>
+        </div>
       </div>
     </div>
   </div>
