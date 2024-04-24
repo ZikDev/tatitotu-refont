@@ -16,8 +16,17 @@
   line-height: normal;
 }
 
-.font-tittle {
+.font-title-dark {
   color: var(--black, #332012);
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.font-title-light {
+  color: var(--withe, #ffffff);
   font-family: "Helvetica Neue";
   font-size: 24px;
   font-style: normal;
@@ -32,4 +41,5 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration: none;
 }

@@ -13,11 +13,11 @@
           <div class="col-12 l-header">
             <img src="img/logo.svg" alt="logo" class="logo" />
             <nav>
-              <a href="">Accueil</a>
-              <a href="">Charger un défi</a>
-              <a href="">Besoin d’aide ?</a>
-              <a href="">Admin</a>
-              <a href="">Contact</a>
+              <a href="" class="font-nav">Accueil</a>
+              <a href="" class="font-nav">Charger un défi</a>
+              <a href="" class="font-nav">Besoin d’aide ?</a>
+              <a href="" class="font-nav">Admin</a>
+              <a href="" class="font-nav">Contact</a>
             </nav>
           </div>
         </div>
@@ -29,7 +29,7 @@
           <div class="col-3">
             <div class="card">
               <div class="card-title">
-                <h2>Verbes</h2>
+                <h2 class="font-title-light">Verbes</h2>
               </div>
               <div class="card-content card-content-verb">
                 <div class="search">
@@ -39,43 +39,44 @@
                       id="site-search"
                       name="search-bar"
                       placeholder="search"
+                      class="font-text"
                     />
                     <img src="img/search.svg" alt="search button" />
                   </label>
                   <select
                     name="question-year"
                     id="select-year"
-                    class="search-year"
+                    class="search-year font-text"
                   >
-                    <option value="3H">-</option>
-                    <option value="3H">3H</option>
-                    <option value="4H">4H</option>
-                    <option value="5H">5H</option>
-                    <option value="6H">6H</option>
-                    <option value="7H">7H</option>
-                    <option value="8H">8H</option>
-                    <option value="9H">9H</option>
-                    <option value="10H">10H</option>
-                    <option value="11H">11H</option>
-                    <option value="CIF">CIF</option>
+                    <option value="-" class="font-text">-</option>
+                    <option value="3H" class="font-text">3H</option>
+                    <option value="4H" class="font-text">4H</option>
+                    <option value="5H" class="font-text">5H</option>
+                    <option value="6H" class="font-text">6H</option>
+                    <option value="7H" class="font-text">7H</option>
+                    <option value="8H" class="font-text">8H</option>
+                    <option value="9H" class="font-text">9H</option>
+                    <option value="10H" class="font-text">10H</option>
+                    <option value="11H" class="font-text">11H</option>
+                    <option value="CIF" class="font-text">CIF</option>
                   </select>
                 </div>
-                <div class="verb button button-verb">
+                <div class="button button-verb font-text">
                   admirer <img src="img/cross.svg" alt="cross" />
                 </div>
-                <div class="verb button button-verb">
+                <div class="button button-verb font-text">
                   avoir <img src="img/cross.svg" alt="cross" />
                 </div>
-                <div class="verb button button-verb">
+                <div class="button button-verb font-text">
                   être <img src="img/cross.svg" alt="cross" />
                 </div>
-                <div class="verb button button-verb">
+                <div class="button button-verb font-text">
                   aller <img src="img/cross.svg" alt="cross" />
                 </div>
-                <div class="verb button button-verb">
+                <div class="button button-verb font-text">
                   lancer <img src="img/cross.svg" alt="cross" />
                 </div>
-                <div class="verb button button-verb">
+                <div class="button button-verb font-text">
                   vendre <img src="img/cross.svg" alt="cross" />
                 </div>
               </div>
@@ -84,11 +85,11 @@
           <div class="col-6">
             <div class="card">
               <div class="card-title">
-                <h2>Paramètres du défi</h2>
+                <h2 class="font-title-light">Paramètres du défi</h2>
               </div>
               <div class="card-content card-content-option">
                 <div class="question">
-                  <h2>Nombre de quesions</h2>
+                  <h2 class="font-title-dark">Nombre de quesions</h2>
                   <select
                     name="question-number"
                     id="number-select"
@@ -103,64 +104,66 @@
                   </select>
                 </div>
                 <div class="mode">
-                  <div class="mode-normal button button-mode">Normal</div>
-                  <div class="mode-temp button button-mode">
+                  <div class="mode-normal button button-mode font-text">
+                    Normal
+                  </div>
+                  <div class="mode-temp button button-mode font-text">
                     Trouver mode + temps
                   </div>
                 </div>
                 <div class="option">
-                  <h3 class="option-title">Indicatif</h3>
+                  <h3 class="font-bigtext">Indicatif</h3>
                   <div class="option-choices row">
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Présent
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Passé composé
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Imparfait
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Plus-que-parfait
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Futur
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Futur antérieur
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Passé simple
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
@@ -170,16 +173,16 @@
                   </div>
                 </div>
                 <div class="option">
-                  <h3 class="option-title">Impératif</h3>
+                  <h3 class="font-bigtext">Impératif</h3>
                   <div class="option-choices row">
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Présent
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
@@ -189,30 +192,30 @@
                   </div>
                 </div>
                 <div class="option">
-                  <h3 class="option-title">Subjonctif</h3>
+                  <h3 class="font-bigtext">Subjonctif</h3>
                   <div class="option-choices row">
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Présent
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Passé
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Imparfait
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
@@ -222,23 +225,23 @@
                   </div>
                 </div>
                 <div class="option">
-                  <h3 class="option-title">Conditionnel</h3>
+                  <h3 class="font-bigtext">Conditionnel</h3>
                   <div class="option-choices row">
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Présent
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Passé 1
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
@@ -248,16 +251,16 @@
                   </div>
                 </div>
                 <div class="option">
-                  <h3 class="option-title">Participe</h3>
+                  <h3 class="font-bigtext">Participe</h3>
                   <div class="option-choices row">
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Présent
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
@@ -267,16 +270,16 @@
                   </div>
                 </div>
                 <div class="option">
-                  <h3 class="option-title">Gerondif</h3>
+                  <h3 class="font-bigtext">Gerondif</h3>
                   <div class="option-choices row">
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
                       </div>
                       Présent
                     </label>
-                    <label class="col-4 switch">
+                    <label class="col-4 switch font-text">
                       <input type="checkbox" />
                       <div class="switch-wrapper">
                         <div class="switch-inner"></div>
@@ -292,17 +295,17 @@
             <div class="action">
               <a
                 href="pages/impression.html"
-                class="button button-action action-button"
+                class="button action-button font-bigtext"
               >
                 Imprimer <img src="img/info.svg" alt="info" />
               </a>
               <a
                 href="pages/exercice.html"
-                class="button button-action action-button"
+                class="button action-button font-bigtext"
               >
                 Jouer <img src="img/info.svg" alt="info" />
               </a>
-              <a href="" class="button button-action action-button">
+              <a href="" class="button action-button font-bigtext">
                 Partager mon défi <img src="img/info.svg" alt="info" />
               </a>
             </div>

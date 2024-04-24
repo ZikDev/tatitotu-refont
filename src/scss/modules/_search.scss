@@ -23,12 +23,6 @@
   width: calc(100% - 30px);
   outline: none;
   border: none;
-  color: var(--black, #332012);
-  font-family: "Helvetica Neue";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .search-year {
@@ -37,19 +31,4 @@
   border-radius: 5px;
   border: 1px solid var(--black, #332012);
   background: var(--white, #fff);
-  color: var(--black, #332012);
-  font-family: "Helvetica Neue";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.search-year option {
-  color: var(--black, #332012);
-  font-family: "Helvetica Neue";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }

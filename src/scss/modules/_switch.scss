@@ -3,12 +3,6 @@
   flex-flow: row nowrap;
   align-items: center;
   gap: 20px;
-  color: var(--black, #332012);
-  font-family: "Helvetica Neue";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .switch-wrapper {
@@ -29,7 +23,7 @@
   flex-shrink: 0;
   border-radius: 10.5px;
   background: var(--off, #ffbf90);
-  transition: margin 0.2s, background 0.2s;
+  transition: margin 0.2s, 0.2s;
 }
 
 input:hover + .switch-wrapper .switch-inner {
